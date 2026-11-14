@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 v_rest = -70.0
 v_threshold = -50.0
-I_input = 40.0
+I_input = 20.0
 dt = 0.1
 T = 200.0
 time = np.arange(0, T, dt)
@@ -18,6 +18,6 @@ plt.axhline(v_threshold, linestyle="--")
 plt.xlabel("Time (ms)")
 plt.ylabel("Voltage (mV)")
 plt.title("Single neuron: leaky integrate-and-fire")
-plt.savefig("voltage_graph.png")
+plt.savefig(f"graph_input_{I_input:.0f}.png")
 plt.show()
 print("Number of spikes:", len(spikes))
