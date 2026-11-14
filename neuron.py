@@ -9,3 +9,4 @@ v=np.full(len(time), v_rest)
 for i in range(1, len(time)):
     v[i] = v[i - 1]
 
+v[i] = v[i-1] + (v_rest - v[i-1]) *dt/10
