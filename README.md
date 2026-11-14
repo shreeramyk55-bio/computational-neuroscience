@@ -1,3 +1,5 @@
+# Project 1: Single Neuron Model (Leaky Integrate-and-Fire)
+
 ## What is this project?
 
 This project builds a simple computer model of one brain cell, a neuron.
