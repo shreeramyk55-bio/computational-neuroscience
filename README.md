@@ -42,3 +42,8 @@ We do not measure a real neuron. The computer calculates it, step by step:
 - Input 40: the voltage crosses -50 mV repeatedly, giving 28 spikes in 200 ms.
 
 A stronger input makes the neuron fire more often.
+## Discussion
+
+The two results show that input strength decides whether the neuron fires. With weak input (20), the voltage rises but never reaches the threshold, so it stays silent. With strong input (40), the voltage reaches -50 mV every few milliseconds, giving 28 spikes in 200 ms.
+
+The model is simple. It has one neuron, a constant input, and no real ion channels. Real neurons also have noise and change their firing over time. These are the next things to add in later projects.
