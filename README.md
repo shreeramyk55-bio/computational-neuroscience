@@ -9,3 +9,6 @@ This project simulates one neuron. Its voltage rises when it receives input, lea
 - Input 40: the voltage crosses -50 mV and resets, giving 28 spikes in 200 ms.
 
 A stronger input makes the neuron fire more often.
+## Graph
+
+![Voltage graph](voltage_graph.png)
