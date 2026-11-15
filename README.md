@@ -47,3 +47,11 @@ A stronger input makes the neuron fire more often.
 The two results show that input strength decides whether the neuron fires. With weak input (20), the voltage rises but never reaches the threshold, so it stays silent. With strong input (40), the voltage reaches -50 mV every few milliseconds, giving 28 spikes in 200 ms.
 
 The model is simple. It has one neuron, a constant input, and no real ion channels. Real neurons also have noise and change their firing over time. These are the next things to add in later projects.
+
+## Project 2: Network of spiking neurons
+
+This project connects ten neurons in a chain. The first neuron receives input and fires. Its spike pushes the next neuron through a synapse, and so on down the line.
+
+Tools used: Brian2 (for the neuron network), Synapses (to connect neurons), and SpikeMonitor (to count spikes).
+
+Result: with input on the first neuron only, spikes spread along the chain, and the total spike count is 140 over 100 ms.
