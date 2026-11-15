@@ -12,3 +12,10 @@ print("Neuron 1 voltage:", neuron.v[1])
 print("Number of spikes:", spikes.num_spikes)
 for k in range(10):
     print("Neuron", k, "spikes:", sum(spikes.i == k))
+import matplotlib.pyplot as plt
+plt.scatter(spikes.t/ms, spikes.i)
+plt.xlabel("Time (ms)")
+plt.ylabel("Neuron number")
+plt.title("Spike raster")
+plt.savefig("raster.png")
+plt.show()
