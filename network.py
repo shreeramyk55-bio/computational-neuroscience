@@ -22,3 +22,5 @@ plt.show()
 import pandas as pd
 table = pd.DataFrame({"neuron": range(10), "spikes": [sum(spikes.i == k) for k in range(10)]})
 print(table)
+from scipy import stats
+print("Mean spikes per neuron:", stats.tmean([sum(spikes.i == k) for k in range(10)]))
