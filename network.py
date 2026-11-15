@@ -19,3 +19,6 @@ plt.ylabel("Neuron number")
 plt.title("Spike raster")
 plt.savefig("raster.png")
 plt.show()
+import pandas as pd
+table = pd.DataFrame({"neuron": range(10), "spikes": [sum(spikes.i == k) for k in range(10)]})
+print(table)
